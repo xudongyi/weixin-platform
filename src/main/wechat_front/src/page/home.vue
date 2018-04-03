@@ -23,7 +23,8 @@
         },
         methods: {
             test:function(){
-              this.$router.push({path:'/home2'});
+              //传递参数
+              this.$router.push({path:'/home2',query:{id:1}});//类似get
             },
             login:function(){
               this.$store.commit('updateLoginState',true);
