@@ -10,5 +10,15 @@ export default new Router({
       name: 'home',
       component: resolve => require(['../page/home.vue'], resolve)
     },
+    {
+      path: '/home2',
+      name: 'home2',
+      component: resolve => require(['../page/home2.vue'], resolve)
+    },
+    {
+      path: '/home3',
+      name: 'home3',
+      component: resolve => require(['../page/home3.vue'], resolve)
+    },
   ]
 })

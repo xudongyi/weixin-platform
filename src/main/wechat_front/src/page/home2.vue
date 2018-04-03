@@ -1,6 +1,6 @@
 <template>
     <div>
-      <a href="javascript:;" @click="test">测试1</a>
+      <a href="javascript:;" @click="test">测试2</a>
     </div>
 </template>
 <script>
@@ -11,7 +11,7 @@
         created() {
           http.get('/test/test.do')
             .then(data => {
-                console.log(data)
+              console.log(data)
             })
         },
         mounted() {
@@ -19,7 +19,7 @@
         },
         methods: {
             test:function(){
-              this.$router.push({path:'/home2'});
+              this.$router.push({path:'/home3'});
             }
         },
         components: {
