@@ -9,7 +9,10 @@
             return {}
         },
         created() {
-
+          http.get('/test/test.do')
+            .then(function (data) {
+              console.log(data);
+            })
         },
         mounted() {
 

@@ -3,10 +3,13 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-
-Vue.config.productionTip = false
-
-/* eslint-disable no-new */
+import {
+  http,
+  imgPath
+} from "./plugins/http"
+Vue.config.productionTip = false;
+window.http = http;
+window.imgPath = imgPath;
 new Vue({
   el: '#app',
   router,
