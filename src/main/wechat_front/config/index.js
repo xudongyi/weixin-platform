@@ -39,12 +39,12 @@ module.exports = {
   //打包时将路径打包至项目中去
   build: {
     // Template for index.html
-    index: path.resolve(__dirname, '../../webapp/dist/index.html'),
+    index: path.resolve(__dirname, '../../webapp/wechat/index.html'),
 
     // Paths
-    assetsRoot: path.resolve(__dirname, '../../webapp/dist'),
+    assetsRoot: path.resolve(__dirname, '../../webapp/wechat'),
     assetsSubDirectory: 'static',
-    assetsPublicPath: '/weixin-platform/dist/',
+    assetsPublicPath: '/weixin-platform/wechat/',
 
     /**
      * Source Maps

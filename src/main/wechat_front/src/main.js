@@ -18,3 +18,19 @@ new Vue({
   components: { App },
   template: '<App/>'
 })
+
+router.afterEach((router) =>{
+  document.title =  router.meta.title || "";
+  //解决ios下title无法显示的问题
+  if (/ip(hone|od|ad)/i.test(navigator.userAgent)) {
+    let iframe = document.createElement('iframe')
+    iframe.src = '/MP_verify_zxjwxCcP80t475ww.txt'
+    iframe.style.display = 'none'
+    iframe.onload = function () {
+      setTimeout(function () {
+        iframe.remove()
+      }, 0)
+      document.body.appendChild(iframe)
+    }
+  }
+});
