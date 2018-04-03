@@ -1,7 +1,6 @@
 <template>
     <div>
       <a href="javascript:;"@click="test">测试123123</a>
-      <img src="../images/personal/1-lx.png">
     </div>
 </template>
 <script>
