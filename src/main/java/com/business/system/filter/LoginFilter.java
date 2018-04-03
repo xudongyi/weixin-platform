@@ -30,7 +30,7 @@ public class LoginFilter implements Filter {
 		String path = request.getRequestURI();
 		// 登陆页面过滤 css,js,images
 		if (path.indexOf(".do") > -1 || path.indexOf("/login.jsp") > -1 || path.contains("/css/")
-		    || path.contains("/js/") || path.contains("/images/")||path.indexOf("/dist/") > -1 ) {
+		    || path.contains("/js/") || path.contains("/images/")||path.indexOf("/wechat/") > -1 ) {
 			filterChain.doFilter(servletRequest, servletResponse);
 			return;
 		}
