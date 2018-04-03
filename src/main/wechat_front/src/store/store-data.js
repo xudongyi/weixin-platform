@@ -3,9 +3,9 @@
  */
 export default {
 	state: {
-		user: {openId:"123123123123132123"}, //基于缓存的用户信息，和缓存一致
+    //基于缓存的用户信息，和缓存一致(初始化加载数据)
+		user: {},
 		isLogin: false, //是否登录
-
 	},
 	mutations: {
 		//更新用户的信息
