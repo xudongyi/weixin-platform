@@ -1,6 +1,7 @@
 <template>
     <div>
       <a href="javascript:;" @click="test">测试1</a>
+      {{$store.state.storeData.user.openId}}
     </div>
 </template>
 <script>
