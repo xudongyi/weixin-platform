@@ -1,7 +1,7 @@
 <template>
   <div>
     <a href="javascript:;" @click="test">测试2</a>
-    {{$route.query.id}}
+    获取到的参数:{{$route.query.id}}
   </div>
 </template>
 <script>

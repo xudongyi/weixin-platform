@@ -4,12 +4,11 @@ import Router from 'vue-router'
 Vue.use(Router)
 
 export default new Router({
-  mode: 'history',
   base: "?#",//防止微信支付无法识别对应的支付目录
   routes: [
     {
       path: '/',
-      name: 'home',
+      name: '/',
       component: resolve => require(['../page/home.vue'], resolve)
     },
     {
